@@ -1,0 +1,13 @@
+# Config file for Thermos Dataset
+
+output_dir: './checkpoints/ckp_thermos_256'
+structure: 'linear'
+device_id: ('1')
+checkpoint_factor: 40
+dataset:
+  img_dir: '../data/thermos'
+  folder: False
+  resolution: 256
+sched:
+  # 4,8,16,32,64,128,256
+  epochs: [40,80,80,80,80,160,160]
